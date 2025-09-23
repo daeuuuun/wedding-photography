@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url(../assets/fonts/CormorantGaramond-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Ephesis';
+  src: url(../assets/fonts/Ephesis-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(../assets/fonts/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Forum';
+  src: url(../assets/fonts/Forum-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  src: url(../assets/fonts/Cormorant-VariableFont_wght.ttf);
+}

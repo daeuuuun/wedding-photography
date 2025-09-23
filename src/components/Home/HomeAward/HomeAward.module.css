@@ -1,0 +1,33 @@
+.mainAward {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #F4F4F4;
+  padding: clamp(40px, 8vh, 100px) 16px;
+  min-height: 50vh;
+}
+
+.mainAward > img {
+  width: clamp(40px, 3vw, 120px);
+  height: auto;
+}
+
+.mainAward > h2 {
+  font-family: 'Raleway';
+  font-size: clamp(16px, 2vw, 28px);
+  font-weight: 500;
+  color: var(--color-primary);
+  letter-spacing: clamp(2px, 0.6vw, 5.6px);
+  margin-top: 30px;
+}
+
+.mainAward > p {
+  font-size: clamp(20px, 5vw, 64px);
+  color: #4F4F4F;
+  margin-top: 33px;
+  max-width: 1100px;
+  padding: 0 16px;
+}
+

@@ -1,0 +1,100 @@
+.invitation {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #F8F8F8;
+}
+
+.imageBox {
+  flex: 0 0 70%;
+}
+.imageBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.decoBox {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translateY(-50%);
+  background: #FFFFFF;
+  padding: clamp(12px, 2vw, 32px);
+  border: 0.4px solid var(--color-primary);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  width: min(35%, 440px);
+  text-align: center;
+  z-index: 2;
+
+  height: auto;
+  min-height: unset;
+}
+
+
+.icon {
+  width: clamp(30px, 6vw, 60px);
+  margin: clamp(12px, 3vw, 26px) 0;
+}
+
+
+
+.decoBox h2 {
+  font-family: 'Ephesis';
+  font-size: clamp(22px, 4vw, 50px);
+  font-weight: 500;
+  margin-bottom: clamp(8px, 2vw, 16px);
+  color: #686868;
+  letter-spacing: 2.5px;
+}
+
+.decoBox p {
+  font-size: clamp(14px, 2.5vw, 24px);
+  color: #414141;
+  margin-bottom: clamp(12px, 4vw, 32px);
+  max-width: 350px;
+  line-height: clamp(1.3, 2vw, 1.6);
+  margin-inline: auto;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .decoBox {
+    left: 60%;
+    width: 45%;
+    padding: clamp(10px, 2vw, 20px);
+    max-height: 70vh;
+  }
+
+  .decoBox h2 {
+    font-size: clamp(20px, 3.6vw, 34px);
+    margin-bottom: clamp(8px, 1.5vw, 14px);
+  }
+
+  .decoBox p {
+    font-size: clamp(14px, 2.2vw, 18px);
+    line-height: clamp(1.3, 2vw, 1.5);
+    margin-bottom: clamp(12px, 2vw, 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .invitation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageBox {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  .decoBox {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: translateY(-40px);
+    width: 90%;
+    margin: 0 auto;
+  }
+}
