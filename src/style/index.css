@@ -12,7 +12,7 @@ html {
 
 body {
   background: var(--color-background);
-  font-family: 'CormorantGaramond', 'Ephesis', 'Raleway', 'Forum', sans-serif;
+  font-family: 'CormorantGaramond', 'Ephesis', 'Raleway', 'Forum', 'Playfair', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

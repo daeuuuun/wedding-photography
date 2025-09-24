@@ -18,18 +18,8 @@ const HomeTestimonials: React.FC = () => {
         </div>
 
         <div className={styles.imageBox}>
-          <img src={wedding} alt="Couple" />
+          <img src={wedding} alt="wedding" />
         </div>
-
-        {/* 데스크탑용 화살표 */}
-        <button className={`${styles.arrow} ${styles.left}`}>{"<"}</button>
-        <button className={`${styles.arrow} ${styles.right}`}>{">"}</button>
-      </div>
-
-      {/* 모바일용 화살표 */}
-      <div className={styles.arrowBox}>
-        <button className={styles.arrow}>{"<"}</button>
-        <button className={styles.arrow}>{">"}</button>
       </div>
     </section>
   );

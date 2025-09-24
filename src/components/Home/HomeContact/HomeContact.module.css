@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0;
+  width: 100%;
+  min-height: 600px;
+  padding: clamp(20px, 6vw, 70px); /* 화면 크기에 따라 유동 여백 */
+}
+
+/* 왼쪽 form 영역 */
+.formBox {
+  flex: 1;
+  background: #f9f8f6;
+  padding: clamp(20px, 5vw, 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact {
+  font-size: clamp(16px, 2vw, 28px);
+  letter-spacing: clamp(2px, 0.5vw, 5.6px);
+  color: var(--color-primary);
+  font-family: 'Raleway';
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: clamp(22px, 4vw, 48px);
+  font-weight: 400;
+  margin-bottom: clamp(20px, 10vw, 100px);
+  color: #5B5B5B;
+  letter-spacing: clamp(1px, 0.5vw, 3.2px);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(16px, 3vw, 24px);
+}
+
+.form label {
+  font-size: clamp(16px, 3vw, 28px);
+  font-weight: 300;
+  color: #2D2D2D;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form input,
+.form textarea {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  padding: 8px 4px;
+  font-size: clamp(14px, 2vw, 16px);
+  outline: none;
+  resize: none;
+}
+
+.button {
+  all: unset;
+  display: inline-block;
+  align-self: flex-start;
+  background: #E9E1D9;
+  margin-top: clamp(20px, 5vw, 40px);
+  padding: clamp(8px, 2vw, 16px) clamp(16px, 4vw, 34px);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: clamp(14px, 3vw, 28px);
+  color: #484848;
+  text-align: center;
+}
+
+.button:hover {
+  background: #d9cfc3;
+}
+
+.imageBox {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageBox img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 700px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .imageBox {
+    order: -1;
+    height: 300px;
+  }
+
+  .imageBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .formBox {
+    padding: 20px;
+  }
+}

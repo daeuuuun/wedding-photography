@@ -6,6 +6,8 @@ import HomeService from '../../components/Home/HomeService/HomeService';
 import HomeInvitation from '../../components/Home/HomeInvitation/HomeInvitation';
 import HomePortpolio from '../../components/Home/HomePortpolio/HomePortpolio';
 import HomeTestimonials from '../../components/Home/HomeTestimonials/HomeTestimonials';
+import HomeStatistics from '../../components/Home/HomeStatistics/HomeStatistics';
+import HomeContact from '../../components/Home/HomeContact/HomeContact';
 
 function Home() {
   return (
@@ -17,6 +19,8 @@ function Home() {
       <HomeInvitation />
       <HomePortpolio />
       <HomeTestimonials />
+      <HomeStatistics />
+      <HomeContact />
     </>
   );
 }
