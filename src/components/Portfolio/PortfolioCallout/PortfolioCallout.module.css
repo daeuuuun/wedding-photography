@@ -1,0 +1,67 @@
+.callout {
+  position: relative;
+  background-image: url(../../../assets/img/portfolio-callout.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+.overlay {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 40px 60px;
+  border: 1px solid #ddd;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Ephesis';
+  font-size: clamp(24px, 4vw, 60px);
+  color: var(--color-primary);
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+.desc {
+  font-size: clamp(14px, 2vw, 28px);
+  color: #000000;
+  font-weight: 300;
+}
+
+
+@media (max-width: 1024px) {
+  .callout {
+    height: 320px;
+  }
+
+  .overlay {
+    padding: 32px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .callout {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .overlay {
+    padding: 24px;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .desc {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,127 @@
+.contactSection {
+  padding: clamp(40px, 6vw, 100px) 20px;
+  background: #fafafa;
+}
+
+.titles {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title {
+  color: var(--color-primary);
+  font-family: 'Raleway';
+  font-size: clamp(18px, 2vw, 28px);
+  font-weight: 500;
+  letter-spacing: 4px;
+  margin-bottom: 8px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.subTitle {
+  font-size: clamp(28px, 4vw, 64px);
+  color: #5B5B5B;
+  font-weight: 400;
+  letter-spacing: 3.2px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.formArea {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.formArea label {
+  display: flex;
+  flex-direction: column;
+  font-size: 28px;
+  font-weight: 300;
+  color: #494949;
+  margin-bottom: 8px;
+}
+
+.formArea input,
+.formArea textarea {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #fff;
+  transition: border-color 0.3s ease;
+  margin: 10px 0;
+}
+
+.formArea input:focus,
+.formArea textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.formArea textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.submitButton {
+  background: #e9e1d9;
+  color: #333;
+  font-size: 28px;
+  font-weight: 500;
+  padding: 12px 32px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  align-self: flex-start;
+  font-family: 'CormorantGaramond';
+}
+
+.submitButton:hover {
+  background: #d9cfc3;
+}
+
+.imageArea img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .formArea {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .subTitle {
+    font-size: 24px;
+  }
+
+  .formArea input,
+  .formArea textarea {
+    font-size: 14px;
+  }
+
+  .submitButton {
+    font-size: 16px;
+    padding: 10px 24px;
+  }
+}
